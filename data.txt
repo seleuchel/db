@@ -1,0 +1,31 @@
+Database changed
+MariaDB [capston]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| cap                |
+| capston            |
+| db                 |
+| information_schema |
+| l                  |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+9 rows in set (0.002 sec)
+
+MariaDB [capston]> describe capston
+    -> ;
+ERROR 1146 (42S02): Table 'capston.capston' doesn't exist
+MariaDB [capston]> describe info;
++------------+---------+------+-----+---------+----------------+
+| Field      | Type    | Null | Key | Default | Extra          |
++------------+---------+------+-----+---------+----------------+
+| _id        | int(11) | NO   | PRI | NULL    | auto_increment |
+| RMSCurrent | double  | YES  |     | NULL    |                |
+| RMSPower   | double  | YES  |     | NULL    |                |
+| kilos      | double  | YES  |     | NULL    |                |
+| peakPower  | double  | YES  |     | NULL    |                |
++------------+---------+------+-----+---------+----------------+
+5 rows in set (0.008 sec)
